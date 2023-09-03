@@ -26,4 +26,9 @@ public class Product {
     public String zoneProductLidl;
     public String zoneProductDino;
 
+    @ManyToOne
+    public Shop shop;
+    @ManyToOne
+    public Quantity quantity;
+
 }
