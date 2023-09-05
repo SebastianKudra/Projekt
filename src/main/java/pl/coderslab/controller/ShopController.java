@@ -1,12 +1,12 @@
-package pl.coderslab.Controller;
+package pl.coderslab.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import pl.coderslab.Dao.ShopDao;
+import pl.coderslab.dao.ShopDao;
 
-import pl.coderslab.Entity.Shop;
+import pl.coderslab.entity.Shop;
 
 import javax.validation.Valid;
 import java.util.List;

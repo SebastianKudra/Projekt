@@ -1,4 +1,4 @@
-package pl.coderslab.Entity;
+package pl.coderslab.entity;
 
 import lombok.Getter;
 import lombok.Setter;

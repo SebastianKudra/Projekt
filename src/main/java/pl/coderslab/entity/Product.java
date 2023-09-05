@@ -1,11 +1,10 @@
-package pl.coderslab.Entity;
+package pl.coderslab.entity;
 
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
-import java.math.BigDecimal;
 
 @Entity
 @Setter
@@ -20,15 +19,12 @@ public class Product {
     public String nameProduct;
     public Long quantityProduct;
     public String baseOfMeasure;
-    public BigDecimal priceProduct;
+    public double priceProduct;
     public String currencyProduct;
     public String zoneProductBiedronka;
     public String zoneProductLidl;
     public String zoneProductDino;
 
-    @ManyToOne
-    public Shop shop;
-    @ManyToOne
-    public Quantity quantity;
+
 
 }

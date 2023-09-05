@@ -9,10 +9,10 @@
 <h1>Lista produktów</h1>
 
 <c:forEach items="${productsList}" var="product">
-<p>${product.id}. ${product.nameProduct} ${product.priceProduct} ${product.currencyProduct}  ${product.quantityProduct} ${product.baseOfMeasure}
-    <a href="updateProduct/${product.id}">Edytuj produkt</a>
-    <a href="removeProduct/${product.id}">Usuń produkt</a>
-</p>
+    <p>${product.id}. ${product.nameProduct} ${product.priceProduct} ${product.currencyProduct} ${product.quantityProduct} ${product.baseOfMeasure}
+        <a href="updateProduct/${product.id}">Edytuj produkt</a>
+        <a href="removeProduct/${product.id}">Usuń produkt</a>
+    </p>
 
 </c:forEach>
 

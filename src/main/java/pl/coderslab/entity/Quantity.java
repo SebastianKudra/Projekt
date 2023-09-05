@@ -1,11 +1,10 @@
-package pl.coderslab.Entity;
+package pl.coderslab.entity;
 
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
-import java.math.BigDecimal;
 
 @Entity
 @Setter
@@ -16,7 +15,10 @@ public class Quantity {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     public Integer id;
-    public BigDecimal quantity;
+    @Column(unique = true)
+    public double quantity;
+    @Column(unique = true)
+
     public String baseOfMeasures;
 
 }

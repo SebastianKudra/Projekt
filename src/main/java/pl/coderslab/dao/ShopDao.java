@@ -1,7 +1,7 @@
-package pl.coderslab.Dao;
+package pl.coderslab.dao;
 
 import org.springframework.stereotype.Repository;
-import pl.coderslab.Entity.Shop;
+import pl.coderslab.entity.Shop;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
