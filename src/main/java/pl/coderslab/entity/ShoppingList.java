@@ -22,7 +22,5 @@ public class ShoppingList {
     @JoinColumn (name = "quantity_id",nullable = false)
     public Quantity quantity;
 
-    @ManyToOne
-    @JoinColumn (name = "shop_id",nullable = false)
-    public Shop shop;
+
 }
