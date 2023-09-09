@@ -6,7 +6,9 @@
 </head>
 <body>
 <h1>Potwierdź usunięcie produktu</h1>
-<a href="/products/removeProduct/${productId}/confirmed">Potwierdź</a>
-<a href="/products/list">Anuluj</a>
+<a href="/product/remove/${productId}/confirmed">Potwierdź</a>
+<a href="/product/list">Anuluj</a>
 </body>
 </html>
+
+

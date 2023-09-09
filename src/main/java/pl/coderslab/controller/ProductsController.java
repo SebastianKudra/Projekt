@@ -46,7 +46,7 @@ public class ProductsController {
     @GetMapping("/list")
     public String list(Model model) {
         List<Product> productsList = productDao.findAllProducts();
-        model.addAttribute("productsList", productsList);
+        model.addAttribute("list", productsList);
         return "/products/list-products";
     }
 
@@ -74,7 +74,7 @@ public class ProductsController {
 
     @GetMapping("/removeProduct/{id}")
     public String removeProductNotConfirmed(@PathVariable Integer id, Model model) {
-        model.addAttribute("productId", id);
+        model.addAttribute("productID", id);
         return "products/remove-products";
     }
 

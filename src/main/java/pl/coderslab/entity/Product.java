@@ -6,6 +6,7 @@ import lombok.ToString;
 
 import javax.persistence.*;
 
+
 @Entity
 @Setter
 @Getter
@@ -14,16 +15,19 @@ import javax.persistence.*;
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Integer id;
+    public Long id;
 
     public String nameProduct;
-    public Long quantityProduct;
-    public String baseOfMeasure;
     public double priceProduct;
     public String currencyProduct;
     public String zoneProductBiedronka;
     public String zoneProductLidl;
     public String zoneProductDino;
+
+
+
+
+
 
 
 

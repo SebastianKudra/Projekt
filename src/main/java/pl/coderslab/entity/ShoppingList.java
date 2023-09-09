@@ -5,22 +5,20 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Setter
 @Getter
 @ToString
-@Table(name="shoppingList")
+@Table(name = "shoppinglist")
+
 public class ShoppingList {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Integer id;
-    @ManyToOne
-    @JoinColumn (name = "product_id", nullable = false)
-    public Product product;
-    @ManyToOne
-    @JoinColumn (name = "quantity_id",nullable = false)
-    public Quantity quantity;
-
-
+    private Long id;
+    private String name;
+    @OneToMany
+    private Set<ShoppingListItem> items = new HashSet<>();
 }

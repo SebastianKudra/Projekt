@@ -5,17 +5,13 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
+@Entity
 @Getter
 @Setter
-@Entity
-@Table(name= "persons")
-public class Person {
+@Table(name="role")
+public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Integer id;
-    public String login;
-    public String password;
-
-
-
+    private Long id;
+    private String name;
 }
